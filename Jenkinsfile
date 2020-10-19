@@ -21,7 +21,7 @@ pipeline {
         stage ("Build and publish docker") {
             steps {
                 println '+++  stage: Build and publish docker ++++'
-                sh "docker-compose -f docker-compose.yml up --build -d"
+                sh "docker-compose -f docker-compose.yml up --build"
                 echo "+++ ending job"
             }
         }
