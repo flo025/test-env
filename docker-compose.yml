@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  testing:
+    container_name: testing
+    build:
+      context: .
+    env_file:
+      - .env
+    environment:
+      - test=ENV du docker-compose
+    command: npm start
+
