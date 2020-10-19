@@ -5,7 +5,5 @@ services:
     container_name: testing
     build:
       context: .
-    env_file:
-      - .env
     command: npm start
 
